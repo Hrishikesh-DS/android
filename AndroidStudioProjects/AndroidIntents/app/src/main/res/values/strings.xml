@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">AndroidIntents</string>
+    <string-array name="colors">
+        <item>RED</item>
+        <item>BLUE</item>
+        <item>GREEN</item>
+        <item>YELLOW</item>
+    </string-array>
+</resources>

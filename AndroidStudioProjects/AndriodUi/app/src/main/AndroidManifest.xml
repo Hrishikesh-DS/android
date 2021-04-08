@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.capgemini.andriodui">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <permission android:name="com.capgemini.androidui.permission.LOGON"
+        android:label="My Permission"
+        android:protectionLevel="normal"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AndriodUi"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".CustomAdaptorDemo"></activity>
+        <activity android:name=".WebViewDemo" />
+        <activity android:name=".SpinnerViewDemo" />
+        <activity android:name=".ListViewDemo" />
+        <activity android:name=".CheckBoxDemo" />
+        <activity android:name=".RadioActivity" />
+        <activity android:name=".DemoActivity" />
+        <activity android:name=".RegisterActivity" >
+<!--            <intent-filter>-->
+<!--                <action android:name="com.capgemini.androidui.action.login"></action>-->
+<!--                <category android:name="android.intent.category.DEFAULT"></category>-->
+<!--            </intent-filter>-->
+<!--            well get 2 options-->
+        </activity>
+
+        <activity android:name=".AuthActivity"
+            android:permission="com.capgemini.androidui.permission.LOGON">
+            <intent-filter>
+                <action android:name="com.capgemini.androidui.action.login"></action>
+                <category android:name="android.intent.category.DEFAULT"></category>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
